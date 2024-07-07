@@ -1,0 +1,36 @@
+:root {
+  --nav-links: 24px;
+}
+
+.nav_links ul li a {
+  color: #9f9f9f;
+  font-size: var(--nav-links);
+}
+.active_link a {
+  color: #08ac9f;
+}
+.active_link::before {
+  content: "";
+  background: #08ac9f;
+  height: 7px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  margin-top: -12px;
+}
+.cart_container .menu {
+  display: none;
+  cursor: pointer;
+}
+.cart_container {
+  background: rgba(182, 7, 164, 0.15);
+  border-radius: 34px;
+  padding: 16px;
+}
+.cart_container .cart-count {
+  font-size: var(--nav-links);
+  color: #b607a4;
+}
+.cart_container .nav-cart {
+  font-size: var(--nav-links);
+}
