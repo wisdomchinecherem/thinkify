@@ -1,13 +1,19 @@
 :root {
-  --nav-links: 24px;
+  --nav-links: 18px;
 }
 
+.nav_bar {
+  width: 100%;
+}
 .nav_links ul li a {
   color: #9f9f9f;
   font-size: var(--nav-links);
 }
+.nav_links ul {
+  height: 60px;
+}
 .active_link a {
-  color: #08ac9f;
+  color: #08ac9f !important;
 }
 .active_link::before {
   content: "";
@@ -15,8 +21,12 @@
   height: 7px;
   width: 100%;
   display: block;
+  position: absolute;
+  max-width: 71px;
+  margin-left: -7px;
   border-radius: 4px;
-  margin-top: -12px;
+  /* margin-top: -12px; */
+  top: 5.5%;
 }
 .cart_container .menu {
   display: none;

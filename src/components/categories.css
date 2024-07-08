@@ -1,0 +1,30 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+  margin: 0 auto;
+}
+.card {
+  border-radius: 40px;
+  max-width: 440px;
+  height: 140px;
+  cursor: pointer;
+  padding: 16px 19px;
+}
+.categories {
+  /* max-width: 1048px; */
+  margin-left: 5rem;
+  background-color: white;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top: 135px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .categories {
+    overflow: hidden;
+  }
+}
