@@ -12,7 +12,7 @@ const DiscountSalesCarousel = () => {
         <span className="mr-[101px] cursor-pointer">See All</span>
       </div>
       <Swiper
-        className="mt-[53px] pl-[12px] py-[20px] mySwiper"
+        className="mt-[53px] pl-[12px] py-[20px] mySwiper mycarousel"
         slidesPerView={3}
         breakpoints={{
           360: {

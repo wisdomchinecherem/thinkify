@@ -2,6 +2,7 @@
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   margin-left: 5rem;
+  padding-bottom: 70px !important;
 }
 .add_to_cart {
   box-shadow: 0 0 17.27px rgb(0, 93, 106, 0.32);
@@ -30,20 +31,9 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   opacity: 1 !important;
   position: absolute !important;
-  top: 100%;
-  /* transform: translateY(-50%); */
-  z-index: 1000 !important;
-}
-
-.swiper-button-next {
-  right: 10%;
-}
-
-.swiper-button-prev {
-  left: 80%;
 }
 
 .swiper-button-next.swiper-button-disabled,
