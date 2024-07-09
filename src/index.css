@@ -12,3 +12,16 @@
 body {
   background: #f8f8f8;
 }
+@media (max-width: 548px) {
+  .carousel_container {
+    padding-left: 70px !important;
+  }
+  .carousel_heading span {
+    margin-right: 40px !important;
+  }
+}
+@media (max-width: 436px) {
+  .carousel_container {
+    padding-left: 30px !important;
+  }
+}

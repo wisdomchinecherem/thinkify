@@ -7,14 +7,25 @@ import { Navigation } from "swiper/modules";
 const DiscountSalesCarousel = () => {
   return (
     <div className="bg-white mt-[80px] pt-[44px] pb-[34px] pl-[89px] carousel_container">
-      <div className="flex items-center text-[#9F9F9F] font-medium text-[27px] justify-between">
+      <div className="flex carousel_heading items-center text-[#9F9F9F] font-medium text-[27px] justify-between">
         <p className="text-[#B607A4] font-medium text-[40px]">Discount Sales</p>
         <span className="mr-[101px] cursor-pointer">See All</span>
       </div>
       <Swiper
-        className="mt-[53px] pl-[12px] py-[20px]"
+        className="mt-[53px] pl-[12px] py-[20px] mySwiper"
         slidesPerView={3}
-        breakpoints={{}}
+        breakpoints={{
+          360: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          902: {
+            slidesPerView: 3,
+          },
+        }}
         spaceBetween={44}
         navigation={true}
         modules={[Navigation]}

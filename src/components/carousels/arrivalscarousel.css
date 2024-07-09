@@ -64,3 +64,18 @@
     padding: 10px 10px !important;
   }
 }
+
+@media (max-width: 629px) {
+  .carousel_container {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 787px) {
+  .carousel_heading p {
+    font-size: 30px !important;
+  }
+  .carousel_heading span {
+    font-size: 20px !important;
+  }
+}

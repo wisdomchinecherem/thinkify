@@ -7,22 +7,30 @@ import Hereo from "./components/Hereo";
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
 import Footer from "./components/Footer";
+import Allsales from "./Allsales.jsx";
 
 const App = () => {
+  const _isPage = true;
   return (
     <>
       <div className="app">
-        <Navbar />
-        <Hereo />
-        <Search />
-        <div className="contain-element">
-          <Categories />
-          <ArrivalsCarousel />
-          <BulkSalesCarousel />
-          <DiscountSalesCarousel />
-          <SpecialSalesCarousel />
-        </div>
-        <Footer />
+        {_isPage ? (
+          <div>
+            <Navbar />
+            <Hereo />
+            <Search />
+            <div className="contain-element">
+              <Categories />
+              <ArrivalsCarousel />
+              <BulkSalesCarousel />
+              <DiscountSalesCarousel />
+              <SpecialSalesCarousel />
+            </div>
+            <Footer />
+          </div>
+        ) : (
+          <Allsales />
+        )}
       </div>
     </>
   );
