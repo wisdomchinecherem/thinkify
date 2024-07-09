@@ -57,3 +57,10 @@
   font-size: 20px !important;
   font-weight: bold;
 }
+
+@media (max-width: 1005px) {
+  .add_to_cart {
+    font-size: 14px;
+    padding: 10px 10px !important;
+  }
+}

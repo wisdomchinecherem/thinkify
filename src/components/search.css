@@ -1,0 +1,10 @@
+@media (max-width: 1154px) {
+  .search {
+    max-width: 899px !important;
+  }
+}
+@media (max-width: 666px) {
+  .search {
+    display: none !important;
+  }
+}

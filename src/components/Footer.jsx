@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
           <img src="../images/footer_logo.png" alt="" />
         </div>
-        <div className="ml-[206px] gap-[23px] flex flex-1 justify-between items-center">
+        <div className="ml-[206px] footer_list gap-[23px] flex flex-1 justify-between items-center">
           {/* footer link 1 */}
           <ul className="flex flex-col gap-[12px]">
             <li>

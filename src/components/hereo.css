@@ -2,3 +2,84 @@
   box-shadow: 0 8.76px 28px rgba(0, 93, 106, 0.32);
   margin-top: 64px;
 }
+
+@media (max-width: 1273px) {
+  .abstract-text {
+    font-size: 45px !important;
+  }
+  .non-abstarct-text {
+    font-size: 45px !important;
+  }
+  .hereo-text-wrap-heading {
+    line-height: 50px !important;
+  }
+  .hereo-desc {
+    font-size: 16px !important;
+    margin-top: 20px !important;
+  }
+  .add_cart_btn {
+    margin-top: 54px;
+    padding: 13px 42px !important;
+  }
+  .hereo-img {
+    width: 400px;
+  }
+  .hereo {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 927px) {
+  .hereo-content {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 847px) {
+  .hereo {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .abstract-text {
+    font-size: 30px !important;
+  }
+  .non-abstarct-text {
+    font-size: 30px !important;
+  }
+  .hereo-text-wrap-heading {
+    line-height: 40px !important;
+  }
+  .add_cart_btn {
+    margin-top: 44px !important;
+  }
+}
+@media (max-width: 719px) {
+  .hereo-desc {
+    max-width: 275px !important;
+  }
+}
+
+@media (max-width: 666px) {
+  .hereo-content {
+    flex-direction: column;
+    max-width: 400px !important;
+  }
+  .hereo-desc {
+    max-width: 100% !important;
+  }
+  .hereo-img {
+    margin-top: 69px;
+  }
+}
+
+@media (max-width: 416px) {
+  .hereo-content {
+    max-width: 100% !important;
+  }
+  .hereo-img img {
+    width: 100% !important;
+  }
+  .hereo-img {
+    width: 300px !important;
+  }
+}
