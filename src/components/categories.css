@@ -18,6 +18,8 @@
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
   margin-top: 135px;
+  z-index: 2;
+  position: relative;
 }
 
 @media (max-width: 768px) {

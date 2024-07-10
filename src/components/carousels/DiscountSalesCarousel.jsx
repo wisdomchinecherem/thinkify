@@ -19,7 +19,7 @@ const DiscountSalesCarousel = () => {
         className="mt-[53px] pl-[12px] py-[20px] mySwiper mycarousel"
         slidesPerView={3}
         breakpoints={{
-          360: {
+          300: {
             slidesPerView: 1,
           },
           640: {
