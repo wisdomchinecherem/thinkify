@@ -1,7 +1,5 @@
-// import ArrivalsCarousel from "./components/carousels/ArrivalsCarousel";
-// import BulkSalesCarousel from "./components/carousels/BulkSalesCarousel";
-// import DiscountSalesCarousel from "./components/carousels/DiscountSalesCarousel";
-// import SpecialSalesCarousel from "./components/carousels/SpecialSalesCarousel";
+// App.jsx
+import { useState } from "react";
 import Categories from "./components/Categories";
 import Hereo from "./components/Hereo";
 import Navbar from "./components/Navbar";
@@ -9,7 +7,6 @@ import Search from "./components/Search";
 import Footer from "./components/Footer";
 import Allsales from "./Allsales.jsx";
 import DATA from "../public/data/data.js";
-import { useState } from "react";
 
 const App = () => {
   const [selectCategory, setSelectCategory] = useState("All Sales");
@@ -40,16 +37,12 @@ const App = () => {
               <div className="fixed z-[20] bg-green-600 right-[0]">
                 <img src="../images/cart-vector.png" alt="" />
               </div>
-              {/* <ArrivalsCarousel />
-              <BulkSalesCarousel />
-              <DiscountSalesCarousel />
-              <SpecialSalesCarousel /> */}
-              <Allsales data={filterProducts(selectCategory)} />
+              <Allsales data={filterProducts(selectCategory)} selectedCategory={selectCategory} />
             </div>
             <Footer />
           </div>
         ) : (
-          <Allsales />
+          <Allsales data={filterProducts(selectCategory)} selectedCategory={selectCategory} />
         )}
       </div>
     </>

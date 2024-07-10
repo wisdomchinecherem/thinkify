@@ -1,14 +1,12 @@
-// import DATA from "../public/data/data";
+import PropTypes from "prop-types";
 import "./allsales.css";
 
-const Allsales = (props) => {
-  const { data } = props;
-
+const Allsales = ({ data, selectedCategory }) => {
   return (
     <div className="xl:mx-[73px] sm:mx-[20px] mt-[41px] bg-[white] relative z-[1] rounded-[30px]">
       <div>
         <p className="text-[#B607A4] font-medium text-[40px] ml-[45px] pt-[41px]">
-          All Sales
+          {selectedCategory}
         </p>
       </div>
       <div className="grid gap-[32px] py-[28px] px-[48px] grid-cols-4 product-container mt-[28px]">
@@ -51,10 +49,9 @@ const Allsales = (props) => {
   );
 };
 
-import PropTypes from 'prop-types';
-
 Allsales.propTypes = {
-  data: PropTypes.array.isRequired
+  data: PropTypes.array.isRequired,
+  selectedCategory: PropTypes.string.isRequired,
 };
 
 export default Allsales;
