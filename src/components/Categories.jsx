@@ -1,13 +1,16 @@
+import PropTypes from "prop-types";
 import "./categories.css";
 
-const Categories = () => {
+const Categories = ({ onCategoryChange }) => {
   return (
     <div className="categories pb-[105px]">
-      <div className="heading text-[#B607A4] font-medium text-[40px] pt-[44px] pl-[89px]">Categories</div>
       <div className="flex navigate_cover items-center mt-[63px] justify-center">
         <div className="cards">
           {/* first card */}
-          <div className="card flex items-center justify-center bg-[#657DAC]">
+          <div
+            onClick={() => onCategoryChange("Bulk Sales")}
+            className="card flex items-center justify-center bg-[#657DAC]"
+          >
             <img
               className="w-[110px] navigate_sales_img"
               src="../images/categories_cart.png"
@@ -19,7 +22,10 @@ const Categories = () => {
             </div>
           </div>
           {/* second card */}
-          <div className="card flex items-center justify-center bg-[#F59C05]">
+          <div
+            onClick={() => onCategoryChange("Discount Sales")}
+            className="card flex items-center justify-center bg-[#F59C05]"
+          >
             <img className="w-[80px]" src="../images/discount.png" alt="" />
             <div className="ml-[24px] text-[30px] leading-[30px] navigate_sales font-semibold text-white">
               <p>Discount</p>
@@ -27,16 +33,30 @@ const Categories = () => {
             </div>
           </div>
           {/* third card */}
-          <div className="card flex items-center justify-center bg-[#B607A4]">
-            <img className="w-[110px] navigate_sales_img" src="../images/specials.png" alt="" />
+          <div
+            onClick={() => onCategoryChange("Special Sales")}
+            className="card flex items-center justify-center bg-[#B607A4]"
+          >
+            <img
+              className="w-[110px] navigate_sales_img"
+              src="../images/specials.png"
+              alt=""
+            />
             <div className="ml-[24px] text-[30px] leading-[30px] navigate_sales font-semibold text-white">
               <p>Special</p>
               <p>Sales</p>
             </div>
           </div>
           {/* fourth card */}
-          <div className="card flex items-center justify-center bg-[#08AC9F]">
-            <img className="w-[110px] navigate_sales_img" src="../images/new.png" alt="" />
+          <div
+            onClick={() => onCategoryChange("New Arrivals")}
+            className="card flex items-center justify-center bg-[#08AC9F]"
+          >
+            <img
+              className="w-[110px] navigate_sales_img"
+              src="../images/new.png"
+              alt=""
+            />
             <div className="ml-[24px] text-[30px] leading-[30px] navigate_sales font-semibold text-white">
               <p>New</p>
               <p>Arrivals</p>
@@ -46,6 +66,10 @@ const Categories = () => {
       </div>
     </div>
   );
+};
+
+Categories.propTypes = {
+  onCategoryChange: PropTypes.func.isRequired,
 };
 
 export default Categories;

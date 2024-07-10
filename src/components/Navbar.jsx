@@ -1,17 +1,7 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./navbar.css";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
-
-  const handleNav = () => {
-    setNav((prev) => !prev);
-  };
-
-  const handleCloseNav = () => {
-    setNav((prev) => !prev);
-  };
-
   return (
     <div className="navbar">
       <header className="header flex items-center justify-center px-[52px] py-[34px]">
@@ -26,51 +16,22 @@ const Navbar = () => {
           </div>
           {/* left nav */}
           {/* nav-links */}
-          <div className={`${nav && "show_nav"} nav_links`}>
-            <div className="mobile_menu flex justify-between items-center pr-[20px] pt-[20px]">
-              <div className="mobile_logo hidden">
-                <img src="../images/logo.png" alt="" />
-              </div>
-              <img
-                onClick={handleCloseNav}
-                src="../images/hambuger-icon.png"
-                className="cursor-pointer hidden"
-                alt=""
-              />
-            </div>
-            <ul className="flex justify-between items-end gap-[64px]">
+          <div className={`nav_links flex-1 ml-[120px]`}>
+            <ul className="flex justify-start items-end gap-[64px]">
               <li className="active_link">
                 <a className={"font-medium"} href="">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a className="font-medium" href="">
-                  About
-                </a>
-              </li>
-              <li>
-                <a className="font-medium" href="">
                   Shop
                 </a>
               </li>
               <li>
                 <a className="font-medium" href="">
-                  Account
-                </a>
-              </li>
-              <li>
-                <a className="font-medium" href="">
-                  Help
+                  Cart
                 </a>
               </li>
             </ul>
           </div>
           {/* right-nav */}
           <div className="right-nav">
-            <div className="search-icon hidden">
-              <img src="../images/search_icon.png" alt="" />
-            </div>
             {/* cart area */}
             <div className="cart_container flex items-center justify-center">
               <div className="flex cursor-pointer items-center gap-[16px]">
@@ -85,8 +46,8 @@ const Navbar = () => {
                 <span className="nav-cart">Cart</span>
               </div>
             </div>
-            <div className="menu" onClick={handleNav}>
-              <img src="../images/hambuger-icon.png" alt="" />
+            <div className="menu">
+              <img src="../images/home-icon.png" alt="" />
             </div>
           </div>
         </nav>
