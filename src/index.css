@@ -22,6 +22,9 @@ body {
   .carousel_heading span {
     margin-right: 40px !important;
   }
+  .carousel_heading p {
+    font-size: 23px !important;
+  }
 }
 @media (max-width: 436px) {
   .carousel_container {
