@@ -1,4 +1,4 @@
-@media (max-width: 1090px) {
+@media (max-width: 1129px) {
   .product-container {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   }

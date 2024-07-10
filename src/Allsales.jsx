@@ -5,7 +5,7 @@ const Allsales = (props) => {
   const { data } = props;
 
   return (
-    <div className="mx-[73px] mt-[41px] bg-[white] relative z-[1] rounded-[30px]">
+    <div className="xl:mx-[73px] sm:mx-[20px] mt-[41px] bg-[white] relative z-[1] rounded-[30px]">
       <div>
         <p className="text-[#B607A4] font-medium text-[40px] ml-[45px] pt-[41px]">
           All Sales
