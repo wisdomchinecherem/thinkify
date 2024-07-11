@@ -32,7 +32,7 @@ const App = () => {
             <Route
               path="/"
               element={
-                <>
+                <div className="home_page">
                   <Navbar />
                   <Hereo />
                   <Search />
@@ -47,7 +47,7 @@ const App = () => {
                     />
                   </div>
                   <Footer />
-                </>
+                </div>
               }
             />
             <Route path="/cart" element={<Cart />} />

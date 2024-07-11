@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./hereo.css";
 
 const Hereo = () => {
@@ -17,9 +18,11 @@ const Hereo = () => {
             cutting-edge resources designed to inspire and empower your
             educational journey.
           </div>
-          <button className="bg-[#08AC9F] text-white py-[16px] px-[52px] border-[2px] border-[white] add_cart_btn rounded-[67px]">
-            View Cart
-          </button>
+          <Link to={"/cart"}>
+            <button className="bg-[#08AC9F] text-white py-[16px] px-[52px] border-[2px] border-[white] add_cart_btn rounded-[67px]">
+              View Cart
+            </button>
+          </Link>
         </div>
         <div className="hereo-img">
           <img src="../images/hereo-image.png" alt="" />

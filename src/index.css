@@ -11,8 +11,8 @@
   background: #f8f8f8;
   height: 100%;
 }
-#root::before,
-#root::after {
+.home_page::before,
+.home_page::after {
   content: "";
   position: absolute;
   top: 0;
@@ -23,14 +23,14 @@
   background-size: cover;
   pointer-events: none;
 }
-#root::before {
+.home_page::before {
   background-image: url("../images/curls-left.png");
   background-size: 800px;
   background-position: -400px 500px;
   opacity: 0.7;
 }
 
-#root::after {
+.home_page::after {
   background-size: 800px;
   background-image: url("../images/curls-left.png");
   background-position: 900px 90px;
@@ -71,85 +71,85 @@ body {
 }
 
 @media (width < 1299px) {
-  #root::before {
+  .home_page::before {
     background-size: 800px;
     background-position: -400px 500px;
   }
 
-  #root::after {
+  .home_page::after {
     background-size: 800px;
     background-position: 900px 60px;
   }
 }
 @media (width <= 1273px) {
-  #root::before {
+  .home_page::before {
     background-size: 800px;
     background-position: -400px 300px;
   }
 }
 @media (width <= 1216px) {
-  #root::after {
+  .home_page::after {
     background-position: 850px 50px;
   }
 }
 @media (width <= 1152px) {
-  #root::after {
+  .home_page::after {
     background-position: 830px 30px;
   }
 }
 @media (width <= 1094px) {
-  #root::after {
+  .home_page::after {
     background-position: 810px 9px;
   }
 }
 @media (width <= 1000px) {
-  #root::after {
+  .home_page::after {
     background-position: 694px 9px;
   }
 }
 @media (width <= 881px) {
-  #root::after {
+  .home_page::after {
     background-position: 484px 9px;
   }
 }
 
 @media (width <= 666px) {
-  #root::before {
+  .home_page::before {
     display: none;
   }
-  #root::after {
+  .home_page::after {
     background-position: 60px 440px;
     background-size: 500px;
   }
 }
 
 @media (width <= 590px) {
-  #root::after {
+  .home_page::after {
     background-position: 60px 440px;
     background-size: 450px;
   }
 }
 @media (width <= 537px) {
-  #root::after {
+  .home_page::after {
     background-position: 30px 440px;
     background-size: 450px;
   }
 }
 @media (width <= 527px) {
-  #root::after {
+  .home_page::after {
     background-position: 40px 460px;
     background-size: 400px;
   }
 }
 @media (width <= 458px) {
-  #root::after {
+  .home_page::after {
     background-position: 40px 500px;
     background-size: 350px;
   }
 }
 
 @media (width < 416px) {
-  #root::after {
+  .home_page::after {
     background-size: 300px;
   }
 }

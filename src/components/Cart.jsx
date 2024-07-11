@@ -4,7 +4,7 @@ import Search from "./Search";
 
 const Cart = () => {
   return (
-    <>
+    <div className="cart-page">
       <Navbar />
       <div className="cart max-w-[1140px] mx-auto">
         <Search />
@@ -159,7 +159,7 @@ const Cart = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

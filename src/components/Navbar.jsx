@@ -1,8 +1,12 @@
 // import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname == path;
+
   return (
     <div className="navbar">
       <header className="header flex items-center justify-center px-[52px] py-[34px]">
@@ -21,12 +25,12 @@ const Navbar = () => {
           {/* nav-links */}
           <div className={`nav_links flex-1 ml-[120px]`}>
             <ul className="flex justify-start items-end gap-[64px]">
-              <li className="active_link">
+              <li className={isActive("/") ? "active_link" : ""}>
                 <Link className={"font-medium"} to="/">
                   Shop
                 </Link>
               </li>
-              <li>
+              <li className={isActive("/cart") ? "active_link" : ""}>
                 <Link className="font-medium" to="/cart">
                   Cart
                 </Link>
