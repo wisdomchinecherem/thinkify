@@ -77,7 +77,7 @@ const Pay = () => {
           <p className="font-medium text-[24px]">Expiry date</p>
           <p className="text-[#6A6A6A]">Enter the expration date of the card</p>
         </div>
-        <div className="bg-red-600 flex items-center w-[394px]">
+        <div className="flex items-center w-[394px] gap-[20px] justify-between pr-[48px]">
           <div className="flex items-center gap-[8px]">
             <input
               type="text"
@@ -89,13 +89,16 @@ const Pay = () => {
               className="w-[36px] h-[35px] border border-solid border-[#9F9F9F] rounded outline-none indent-[3px]"
             />
           </div>
-          <div className="flex items-center">
-            <div>
+          <div className="flex items-center gap-[14px]">
+            <div className="leading-[20px]">
               <p>CVV2</p>
-              <p>Security code</p>
+              <p className="text-[#6A6A6A]">Security code</p>
             </div>
             <div>
-              <input type="text" />
+              <input
+                type="text"
+                className="w-[36px] h-[35px] border border-solid border-[#9F9F9F] rounded outline-none indent-[3px]"
+              />
             </div>
           </div>
         </div>
