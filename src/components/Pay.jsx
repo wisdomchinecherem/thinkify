@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "./pay.css";
+import Ads from "./Ads";
 
 const Pay = () => {
   return (
-    <>
+    <div className="paying">
       <Navbar />
       <div className="mx-auto mt-[55px] checkout-container max-w-[894px] bg-white rounded-3xl px-[64px] py-[71px]">
         <div className="text-[#B607A4] font-medium text-[21px] mb-[36px]">
@@ -119,13 +121,16 @@ const Pay = () => {
         </div>
         {/* ................. */}
         <div className="mt-[32px] flex items-center justify-center">
-          <button className="bg-[#08AC9F] border border-white btn-checkout rounded-[30px] text-white py-[16px] px-[87px] text-[18px]">
-            Checkout
-          </button>
+          <Link to={"/confirmation"}>
+            <button className="bg-[#08AC9F] border border-white btn-checkout rounded-[30px] text-white py-[16px] px-[87px] text-[18px]">
+              Checkout
+            </button>
+          </Link>
         </div>
       </div>
+      <Ads />
       <Footer />
-    </>
+    </div>
   );
 };
 

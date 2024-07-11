@@ -211,3 +211,9 @@
     background-size: 300px;
   }
 }
+
+@media (max-width: 424px) {
+  .product-display {
+    flex-direction: column !important;
+  }
+}

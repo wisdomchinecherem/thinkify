@@ -6,14 +6,14 @@ import "./payment.css";
 
 const Payment = () => {
   return (
-    <div>
+    <div className="payment-way">
       <Navbar />
       <div className="payment mt-[205px]">
         <div className="payment_main_container max-w-[638px] p-[40px] bg-white rounded-3xl mx-auto">
-          <p className="text-[#B607A4] mb-[40px] font-medium text-[28px]">
+          <p className="text-[#B607A4] mb-[40px] font-medium text-[28px] payment-method">
             Choose Payment Method
           </p>
-          <div className="grid grid-cols-2 gap-[20px]">
+          <div className="grid grid-cols-2 grid-contain gap-[20px]">
             <div className="card_payment flex align-middle items-center justify-center gap-[16px] bg-white px-[38px] py-[26px] rounded-[20px] pay cursor-pointer">
               <img src="./images/card.png" alt="" />
               <p className="font-medium">

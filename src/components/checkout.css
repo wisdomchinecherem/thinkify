@@ -1,50 +1,30 @@
-.pay {
-  transition: color 0.5s !important;
-  box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
-
-  &:hover {
-    color: #792e7a;
-  }
-}
-.btn-shadow {
-  box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
-}
-@media (max-width: 674px) {
-  .payment_main_container {
+@media (max-width: 938px) {
+  .confirmation {
     margin-left: 20px !important;
     margin-right: 20px !important;
   }
 }
-@media (max-width: 643px) {
-  .btn-shadow {
-    padding-left: 50px !important;
-    width: 100% !important;
-    padding-right: 50px !important;
+
+@media (max-width: 414px) {
+  .confirmation button {
+    padding: 16px 60px;
+    font-size: 14px;
   }
-  .grid-contain {
-    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-    place-items: center;
+  .confirmation {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
-  .payment-method {
-    font-size: 17px !important;
+  .text-confirm {
+    font-size: 16px;
   }
-  .pay {
-    max-width: 300px !important;
-  }
-}
-@media (max-width: 380px) {
-  .pay p {
-    font-size: 15px !important;
-  }
-  .payment_main_container {
-    padding: 20px !important;
+  .confirmation img {
+    width: 100px;
   }
 }
 
 /* curls */
-
-.payment-way::before,
-.payment-way::after {
+.checking::before,
+.checking::after {
   content: "";
   position: absolute;
   top: 0;
@@ -55,14 +35,14 @@
   background-size: cover;
   pointer-events: none;
 }
-.payment-way::before {
+.checking::before {
   background-image: url("../images/curls-left.png");
   background-size: 800px;
   background-position: -400px 500px;
   opacity: 0.7;
 }
 
-.payment-way::after {
+.checking::after {
   background-size: 800px;
   background-image: url("../images/curls-left.png");
   background-position: 900px 90px;
@@ -70,95 +50,89 @@
 }
 
 @media (width < 1299px) {
-  .payment-way::before {
+  .checking::before {
     background-size: 800px;
     background-position: -400px 500px;
   }
 
-  .payment-way::after {
+  .checking::after {
     background-size: 800px;
     background-position: 900px 60px;
   }
 }
 @media (width <= 1273px) {
-  .payment-way::before {
+  .checking::before {
     background-size: 800px;
     background-position: -400px 300px;
   }
 }
 @media (width <= 1216px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 850px 50px;
   }
 }
 @media (width <= 1152px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 830px 30px;
   }
 }
 @media (width <= 1094px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 810px 9px;
   }
 }
 @media (width <= 1000px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 694px 9px;
   }
 }
 @media (width <= 881px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 484px 9px;
   }
 }
 
 @media (width <= 666px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 60px 440px;
     background-size: 500px;
   }
 }
 
 @media (width <= 590px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 60px 440px;
     background-size: 450px;
   }
 }
 @media (width <= 537px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 30px 440px;
     background-size: 450px;
   }
 }
 @media (width <= 527px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 40px 460px;
     background-size: 400px;
   }
 }
 @media (width <= 458px) {
-  .payment-way::after {
+  .checking::after {
     background-position: 40px 500px;
     background-size: 350px;
   }
 }
 
 @media (width < 416px) {
-  .payment-way::after {
+  .checking::after {
     background-size: 300px;
   }
 }
 
-@media (max-width: 424px) {
-  .product-display {
-    flex-direction: column !important;
-  }
-}
-
 @media (max-width: 817px) {
-  .payment-way::before,
-  .payment-way::after {
+  .checking::before,
+  .checking::after {
     display: none;
   }
 }

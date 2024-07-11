@@ -12,6 +12,7 @@ import Cart from "./components/Cart.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Payment from "./components/Payment.jsx";
 import Pay from "./components/Pay.jsx";
+import Checkout from "./components/Checkout.jsx";
 const App = () => {
   const [selectCategory, setSelectCategory] = useState("All Sales");
 
@@ -55,6 +56,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/checkout" element={<Pay />} />
+            <Route path="/confirmation" element={<Checkout />} />
           </Routes>
         </div>
       </Router>

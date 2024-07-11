@@ -24,7 +24,7 @@ const Cart = () => {
           </p>
           <div className="product-block grid place-items-center grid-cols-2 gap-4">
             <div className="products flex flex-col bg-white relative z-index-[3] max-w-[554px] py-[39px] px-[32px] rounded-[30px] items-center">
-              <div className="flex items-center gap-[32px]">
+              <div className="flex items-center gap-[32px] product-display">
                 <div className="product-image">
                   <img src="../images/products/product-hard-cover.png" alt="" />
                 </div>
@@ -58,7 +58,7 @@ const Cart = () => {
               </div>
             </div>
             <div className="products flex flex-col bg-white relative z-index-[3] max-w-[554px] py-[39px] px-[32px] rounded-[30px] items-center">
-              <div className="flex items-center gap-[32px]">
+              <div className="flex items-center gap-[32px] product-display">
                 <div className="product-image">
                   <img src="../images/products/product-hard-cover.png" alt="" />
                 </div>
@@ -92,7 +92,7 @@ const Cart = () => {
               </div>
             </div>
             <div className="products flex flex-col bg-white relative z-index-[3] max-w-[554px] py-[39px] px-[32px] rounded-[30px] items-center">
-              <div className="flex items-center gap-[32px]">
+              <div className="flex items-center gap-[32px] product-display">
                 <div className="product-image">
                   <img src="../images/products/product-hard-cover.png" alt="" />
                 </div>
@@ -126,7 +126,7 @@ const Cart = () => {
               </div>
             </div>
             <div className="products flex flex-col bg-white relative z-index-[3] max-w-[554px] py-[39px] px-[32px] rounded-[30px] items-center">
-              <div className="flex items-center gap-[32px]">
+              <div className="flex items-center gap-[32px] product-display">
                 <div className="product-image">
                   <img src="../images/products/product-hard-cover.png" alt="" />
                 </div>
