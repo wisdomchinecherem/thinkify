@@ -22,14 +22,14 @@ const Navbar = () => {
           <div className={`nav_links flex-1 ml-[120px]`}>
             <ul className="flex justify-start items-end gap-[64px]">
               <li className="active_link">
-                <a className={"font-medium"} href="">
+                <Link className={"font-medium"} to="/">
                   Shop
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="font-medium" href="">
+                <Link className="font-medium" to="/cart">
                   Cart
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
