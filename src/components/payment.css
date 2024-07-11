@@ -1,0 +1,11 @@
+.pay {
+  transition: color 0.5s !important;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    color: #792e7a;
+  }
+}
+.btn-shadow {
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
+}

@@ -20,7 +20,7 @@ const Allsales = ({ data, selectedCategory }) => {
                 <img
                   src={res.productimage}
                   className="object-cover slide_img w-full"
-                  alt=""
+                  alt={res.productname}
                 />
               </div>
               <div className="mt-[24px]">

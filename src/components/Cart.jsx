@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
 import "./cart.css";
 import Navbar from "./Navbar";
 import Search from "./Search";
+import Footer from "./Footer";
+import Ads from "./Ads";
 
 const Cart = () => {
   return (
@@ -16,7 +19,7 @@ const Cart = () => {
         </div>
 
         <div className="cart_product mx-[20px] xl:bg-transparent bg-transparent">
-          <p className="text-[#B607A4] font-medium text-[22px] ml-[10px] mt-[80px] mb-[14px]">
+          <p className="text-[#B607A4] font-medium cart_amount text-[22px] ml-[10px] mt-[80px] mb-[14px]">
             cart (4)
           </p>
           <div className="product-block grid place-items-center grid-cols-2 gap-4">
@@ -158,7 +161,22 @@ const Cart = () => {
             </div>
           </div>
         </div>
+        {/* checkout btn */}
+        <Link to={"/"}>
+          <div className="flex justify-center py-[34px]">
+            <Link to={"/payment"}>
+              <button className="check_out text-center align-middle whitespace-nowrap py-[13px] bg-[#08AC9F] px-[85px] rounded-[40px] text-white font-medium text-[18px] cursor-pointer">
+                Checkout
+              </button>
+            </Link>
+          </div>
+        </Link>
       </div>
+
+      {/* more like these */}
+      <Ads />
+      {/* footer */}
+      <Footer />
     </div>
   );
 };
