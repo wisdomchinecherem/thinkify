@@ -1,3 +1,85 @@
 .btn-checkout {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 890px) {
+  .checkout-container {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    scale: 0.9;
+  }
+  .card-text {
+    width: 261.58px;
+  }
+}
+
+@media (max-width: 867px) {
+  .heading {
+    font-size: 16px !important;
+  }
+  .sub-head {
+    font-size: 12px !important;
+  }
+  .inputs {
+    width: 341px !important;
+  }
+  .check {
+    width: 25px !important;
+  }
+}
+
+@media (max-width: 797px) {
+  .checkout-container {
+    /* scale: 0.7 !important; */
+  }
+}
+@media (max-width: 691px) {
+  .cvv p {
+    font-size: 13px;
+  }
+  .cvv-details {
+    flex-direction: column;
+    align-items: end !important;
+  }
+}
+
+@media (max-width: 589px) {
+  .credentials {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  .checkout-container {
+    padding: 20px !important;
+  }
+  .heading {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .inputs {
+    width: 100% !important;
+  }
+  .third-inputs {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  .cvv-details {
+    align-items: flex-start !important;
+    flex-direction: row !important;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 386px) {
+  .cvv-details {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 916px) {
+  .checkout-container {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
